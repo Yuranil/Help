@@ -1,0 +1,27 @@
+#include <stdio.h> //Library for basic I/O functions
+#include <conio.h> //Library for basic I/O functions
+
+void CallByValue (int , int); //erste Funktion
+void CallByReference (int* , int*); //zweite Funktion
+int main() //Main Funktion
+{
+	int Var1=10; //Variable 1
+	int Var2=20; //Variable 2
+	CallByValue(Var1 , Var2);
+	CallByReference(&Var1, &Var2);
+	Ausgabe1() //Ausgabe 1
+	getch(); //liest und gibt einen integer aus ohne Anzeige
+	return 0; //schliesst die main Funktion ab
+}
+void CallByValue(int Var1, int Var2) //Wert wird aus Adresse kopiert und in Funktion verwendet, wobei der Wert gleich bleibt
+{
+	Var1=Var1*10;
+	Var2=Var2*10; //Wert wird kopiert bleibt in Adresse jedoch gleich
+	ausgabe1() //Ausgabe aus externer datei
+}
+void CallByReference(int*Var1, int *Var2) //Adresse wird verwendet und in Funktion verwendet, wobei der Wert verändert wird
+{
+	*Var1=*Var1+100; 
+	*var2=*Var2+200; //Wert aus Adresse wird modifiziert
+	Ausgabe2() //Ausgabe 2
+}
