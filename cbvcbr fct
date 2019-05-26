@@ -1,0 +1,9 @@
+include <stdio.h>
+void ausgabe1()
+{
+printf("\n Var1=%d, Var2=%d",Var1,Var2); //AUSGABE 1 für main file
+}
+void ausgabe2()
+{
+printf("\n *Var1=%d, *Var2=%d",Var1,Var2); //AUSGABE 2 für main file
+}
